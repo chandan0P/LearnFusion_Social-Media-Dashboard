@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-gray-100 py-8 px-6 relative">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-4xl font-bold">Social Media Dashboard</h1>
+        <h3 class="text-lg">Total Followers: 5.6M</h3>
+      </div>
+      <div class="flex items-center space-x-4">
+        <p class="font-semibold">Dark Mode</p>
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="toggle" class="sr-only" />
+          <div class="w-12 h-6 bg-gray-600 rounded-full peer"></div>
+          <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform peer-checked:translate-x-6"></div>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- KPIs -->
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-evenly mt-8">
+    <div class="bg-blue-100 w-80 h-64 rounded-lg p-4 mb-4">
+      <div class="bg-blue-600 h-1 rounded-t-lg"></div>
+      <div class="flex items-center py-4">
+        <img src="images/icon-facebook.svg" alt="facebook" class="h-6" />
+        <p class="ml-4">@Linkedin</p>
+      </div>
+      <div class="text-5xl font-bold text-center">3.2M</div>
+      <h4 class="text-center text-gray-600">FOLLOWERS</h4>
+      <p class="text-green-500 text-center">▲ 1265 Today</p>
+    </div>
+    <div class="bg-blue-100 w-80 h-64 rounded-lg p-4 mb-4">
+      <div class="bg-blue-400 h-1 rounded-t-lg"></div>
+      <div class="flex items-center py-4">
+        <img src="images/icon-twitter.svg" alt="twitter" class="h-6" />
+        <p class="ml-4">@Linkedin</p>
+      </div>
+      <div class="text-5xl font-bold text-center">1.8M</div>
+      <h4 class="text-center text-gray-600">FOLLOWERS</h4>
+      <p class="text-green-500 text-center">▲ 1623 Today</p>
+    </div>
+    <div class="bg-blue-100 w-80 h-64 rounded-lg p-4 mb-4">
+      <div class="bg-pink-600 h-1 rounded-t-lg"></div>
+      <div class="flex items-center py-4">
+        <img src="images/icon-instagram.svg" alt="instagram" class="h-6" />
+        <p class="ml-4">@Linkedin</p>
+      </div>
+      <div class="text-5xl font-bold text-center">1.1M</div>
+      <h4 class="text-center text-gray-600">FOLLOWERS</h4>
+      <p class="text-green-500 text-center">▲ 1214 Today</p>
+    </div>
+    <div class="bg-blue-100 w-80 h-64 rounded-lg p-4 mb-4">
+      <div class="bg-red-600 h-1 rounded-t-lg"></div>
+      <div class="flex items-center py-4">
+        <img src="images/icon-youtube.svg" alt="youtube" class="h-6" />
+        <p class="ml-4">Linkedin</p>
+      </div>
+      <div class="text-5xl font-bold text-center">224K</div>
+      <h4 class="text-center text-gray-600">SUBSCRIBERS</h4>
+      <p class="text-red-500 text-center">▼ 104 Today</p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="max-w-7xl mx-auto mt-8">
+    <h2 class="text-2xl text-gray-400 mb-4">Overview - Today</h2>
+    <div class="flex flex-wrap justify-evenly">
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-facebook.svg" alt="facebook" class="h-6" />
+          <p class="ml-4 text-lg">Page Views</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">124</div>
+        <p class="text-green-500">▲ 7%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-twitter.svg" alt="twitter" class="h-6" />
+          <p class="ml-4 text-lg">Retweets</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">163</div>
+        <p class="text-green-500">▲ 95%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-instagram.svg" alt="instagram" class="h-6" />
+          <p class="ml-4 text-lg">Likes</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">3125</div>
+        <p class="text-green-500">▲ 315%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-youtube.svg" alt="youtube" class="h-6" />
+          <p class="ml-4 text-lg">Likes</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">2172</div>
+        <p class="text-red-500">▼ 39%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-facebook.svg" alt="facebook" class="h-6" />
+          <p class="ml-4 text-lg">Likes</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">27</div>
+        <p class="text-red-500">▼ 5%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-twitter.svg" alt="twitter" class="h-6" />
+          <p class="ml-4 text-lg">Likes</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">1344</div>
+        <p class="text-green-500">▲ 110%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-instagram.svg" alt="instagram" class="h-6" />
+          <p class="ml-4 text-lg">Profile Views</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">7616</div>
+        <p class="text-green-500">▲ 371%</p>
+      </div>
+      <div class="bg-blue-100 w-80 h-40 rounded-lg p-4 mb-4">
+        <div class="flex items-center">
+          <img src="images/icon-youtube.svg" alt="youtube" class="h-6" />
+          <p class="ml-4 text-lg">Total Views</p>
+        </div>
+        <div class="text-3xl font-bold mt-2">450</div>
+        <p class="text-red-500">▼ 22%</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Dark Mode Toggle
+    const btn = document.getElementById("toggle");
+    btn.addEventListener("change", () => {
+      document.body.classList.toggle("bg-gray-900", btn.checked);
+      document.body.classList.toggle("text-gray-100", btn.checked);
+      document.body.classList.toggle("bg-white", !btn.checked);
+      document.body.classList.toggle("text-gray-900", !btn.checked);
+    });
+  </script>
+</body>
+</html>
